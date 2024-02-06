@@ -33,8 +33,10 @@ const scheduler = new Scheduler({
     },
   },
   crudManager: {
-    loadUrl: "/data/data.json",
+    loadUrl: "http://localhost:5050/api/load",
     autoLoad: true,
+    syncUrl: "http://localhost:5050/api/sync",
+    autoSync: true,
     // This config enables response validation and dumping of found errors to the browser console.
     // It's meant to be used as a development stage helper only so please set it to false for production systems.
     validateResponse: true,
